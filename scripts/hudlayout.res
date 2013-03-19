@@ -1353,14 +1353,14 @@
 		"controlName" "CExLabel"
 		"fieldName" "OmpCrosshairCircle"
 		"font" "Crosshairs40"
-		"fgcolor" "225 225 225 30"
+		"fgcolor" "160 32 240 200"
 		"labelText" "9"
 		"xpos" "c-100"
 		"ypos" "c-96"
 		"wide" "201"
 		"tall" "200"
-		"visible" "0"
-		"enabled" "0"
+		"visible" "1"
+		"enabled" "1"
 		"textAlignment" "center"
 	}
 }

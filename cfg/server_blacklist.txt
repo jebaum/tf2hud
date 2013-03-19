@@ -1,0 +1,9 @@
+"serverblacklist"
+{
+	"server"
+	{
+		"name"		"CSIservers.net - 24/7 2 Fort [LA, Cali]"
+		"date"		"1358739381"
+		"addr"		"64.94.100.120:27015"
+	}
+}
