@@ -6,4 +6,16 @@
 		"date"		"1358739381"
 		"addr"		"64.94.100.120:27015"
 	}
+	"server"
+	{
+		"name"		"[!?] - teaminterrobang.com # 7 - Quick KOTH (stats, alltalk)"
+		"date"		"1363938087"
+		"addr"		"216.52.148.95:27015"
+	}
+	"server"
+	{
+		"name"		"[!?] - teaminterrobang.com # 7 - Quick KOTH (stats, alltalk)"
+		"date"		"1363938089"
+		"addr"		"216.52.148.95:27015"
+	}
 }

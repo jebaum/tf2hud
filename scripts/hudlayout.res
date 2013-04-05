@@ -1,5 +1,219 @@
 "Resource/HudLayout.res"
 {
+
+////////// BEGIN HUD LINES //////////
+
+    "Crosshair_vertical" // top line
+    {
+        "ControlName"       "ImagePanel"
+        "fieldName"     "VerticalLine"
+        "xpos"          "c"
+        "xpos_lodef"    "279"
+        "xpos_hidef"    "309"
+        "ypos"          "c-174"
+        "zpos"          "-5"
+        "wide"          "1"
+        "tall"          "154"
+        "tall_lodef"    "206"
+        "tall_hidef"    "212"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "fillcolor"     "255 255 255 255"
+        "alpha" "10"
+                }
+    "Crosshair_horizontal" // left line
+    {
+        "ControlName"       "ImagePanel"
+        "fieldName"     "VerticalLine"
+        "xpos"          "c-310"
+        "xpos_lodef"    "279"
+        "xpos_hidef"    "309"
+        "ypos"          "c"
+        "zpos"          "-5"
+        "wide"          "290"
+        "tall"          "1"
+        "tall_lodef"    "206"
+        "tall_hidef"    "212"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "fillcolor"     "255 255 255 255"
+        "alpha" "10"
+        }
+    "Crosshair_horizontal" // right line
+    {
+        "ControlName"       "ImagePanel"
+        "fieldName"     "VerticalLine"
+        "xpos"          "c20"
+        "xpos_lodef"    "279"
+        "xpos_hidef"    "309"
+        "ypos"          "c"
+        "zpos"          "-5"
+        "wide"          "290"
+        "tall"          "1"
+        "tall_lodef"    "206"
+        "tall_hidef"    "212"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "fillcolor"     "255 255 255 255"
+        "alpha" "10"
+        }
+    "dark_top" // first bit of top line
+    {
+        "ControlName"       "ImagePanel"
+        "fieldName"     "VerticalLine"
+        "xpos"          "c"
+        "xpos_lodef"    "279"
+        "xpos_hidef"    "309"
+        "ypos"          "183"
+        "zpos"          "-5"
+        "wide"          "1"
+        "tall"          "38"
+        "tall_lodef"    "206"
+        "tall_hidef"    "212"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "fillcolor"     "255 255 255 255"
+        "alpha" "23"
+                }
+    "dark_bottom" // bottom line
+    {
+        "ControlName"       "ImagePanel"
+        "fieldName"     "VerticalLine"
+        "xpos"          "c"
+        "xpos_lodef"    "279"
+        "xpos_hidef"    "309"
+        "ypos"          "260"
+        "zpos"          "-5"
+        "wide"          "1"
+        "tall"          "38"
+        "tall_lodef"    "206"
+        "tall_hidef"    "212"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "fillcolor"     "255 255 255 255"
+        "alpha" "35"
+                }
+    "dark_left" // first bit of left line
+    {
+        "ControlName"       "ImagePanel"
+        "fieldName"     "VerticalLine"
+        "xpos"          "c-70"
+        "xpos_lodef"    "279"
+        "xpos_hidef"    "309"
+        "ypos"          "c"
+        "zpos"          "-5"
+        "wide"          "50"
+        "tall"          "1"
+        "tall_lodef"    "206"
+        "tall_hidef"    "212"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "fillcolor"     "255 255 255 255"
+        "alpha" "23"
+                        }
+    "dark_right" // first bit of right line
+    {
+        "ControlName"       "ImagePanel"
+        "fieldName"     "VerticalLine"
+        "xpos"          "c20"
+        "xpos_lodef"    "279"
+        "xpos_hidef"    "309"
+        "ypos"          "c"
+        "zpos"          "-5"
+        "wide"          "50"
+        "tall"          "1"
+        "tall_lodef"    "206"
+        "tall_hidef"    "212"
+        "autoResize"    "0"
+        "pinCorner"     "0"
+        "visible"       "1"
+        "enabled"       "1"
+        "fillcolor"     "255 255 255 255"
+        "alpha" "23"
+        }
+        
+////////// END HUD LINES //////////
+        
+        
+    CrossHairSpecialCombo1
+	{
+		"controlName"	"CExLabel"
+		"fieldName"	 	"CrossHairSpecialCombo1"
+		"visible"		"1"
+		"enabled"		"1"
+		"zpos"			"2"
+
+		"xpos"			"c-100"
+		"ypos"			"c-101"
+		"wide"			"200"
+		"tall"			"202"
+
+		"font"			"CrossHairSpecialCombo1"
+		"labelText"		"i"
+		"textAlignment"	"center"	
+		
+		"fgcolor"		"0 0 0 255"
+	}
+
+	CrossHairSpecialCombo2
+	{
+		"controlName"	"CExLabel"
+		"fieldName"	 	"CrossHairSpecialCombo2"
+		"visible"		"1"
+		"enabled"		"1"
+		"zpos"			"2"
+
+		"xpos"			"c-101"
+		"ypos"			"c-101"
+		"wide"			"200"
+		"tall"			"202"
+
+		"font"			"CrossHairSpecialCombo2"
+		"labelText"		">"
+		"textAlignment"	"center"	
+		
+		//"fgcolor"		"0 255 0 255"
+		"fgcolor" "0 255 0 255"
+	}
+        
+    	CrossHairCircle
+	{
+		"controlName"	"CExLabel"
+		"fieldName"	 	"CrossHairCircle"
+		"visible"		"1"
+		"enabled"		"1"
+		"zpos"			"2"
+
+		"xpos"			"c-100"
+		"ypos"			"c-100"
+		"wide"			"201"
+		"tall"			"201"
+
+		"font"			"CrossHairCircle"
+		"labelText"		"i"
+		"textAlignment"	"center"	
+		
+		"fgcolor"		"235 226 202 255"
+	}    
+        
+        
+        
+        
+        
+        
+        
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"
@@ -1359,7 +1573,7 @@
 		"ypos" "c-96"
 		"wide" "201"
 		"tall" "200"
-		"visible" "1"
+		"visible" "0"
 		"enabled" "1"
 		"textAlignment" "center"
 	}

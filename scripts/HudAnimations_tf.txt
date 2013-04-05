@@ -765,7 +765,7 @@ event DamagedPlayer
 	//Animate	OmpCrosshairDot			FgColor "255 0 255 255"		Accel 0.2 0.0
 
     Animate OmpCrosshairCircle      FgColor "255 0 0 200"           Accel 0.0 0.0 // animation has 0.0 delay before starting, then happens over 0.0 seconds
-    Animate OmpCrosshairCircle      FgColor "160 32 240 200"        Accel 0.3 0.0 // animation holds for .2 seconds, then happens over .3 seconds
+    Animate OmpCrosshairCircle      FgColor "160 32 240 200"        Accel 0.2 0.0 // animation holds for .2 seconds, then happens over 0.0 seconds
 }
 
 //===========================================

@@ -449,7 +449,44 @@ Scheme
 		// fonts are used in order that they are listed
 		// fonts listed later in the order will only be used if they fulfill a range not already filled
 		// if a font fails to load then the subsequent fonts will replace
-		"Default"
+		
+		"CrossHairCircle"
+		{
+			"1"
+			{
+				"name"		"Formas germetricas 1"
+				"tall"		"24"
+				"weight"	"0"
+				"antialias"	"1"
+				"outline" "1"
+			}
+		}
+		"CrossHairSpecialCombo1"
+		{
+			"1"
+			{
+				"name"		"Formas germetricas 1"
+				"tall"		"3"
+				"weight"	"0"
+				"antialias"	"1"
+			}
+		}
+
+		"CrossHairSpecialCombo2"
+		{
+			"1"
+			{
+				"name"		"BulletBalls AOE"
+				"tall"		"2"
+				"weight"	"0"
+				"antialias"	"1"
+			}
+		}
+        
+        
+        
+        
+        "Default"
 		{
 			"1"
 			{
@@ -4847,5 +4884,10 @@ Scheme
 			"font" "resource/Blocks.ttf"
 			"name" "Blocks"
 		}
+		"12" 
+		{
+			"font" "resource/FORMASGE.ttf"
+			"name" "FORMASGE"
+		}	
 	}
 }
