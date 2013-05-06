@@ -454,7 +454,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Formas germetricas 1"
+				"name"		"FORMASGE"
 				"tall"		"24"
 				"weight"	"0"
 				"antialias"	"1"
@@ -465,7 +465,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Formas germetricas 1"
+				"name"		"FORMASGE"
 				"tall"		"3"
 				"weight"	"0"
 				"antialias"	"1"
@@ -4886,7 +4886,7 @@ Scheme
 		}
 		"12" 
 		{
-			"font" "resource/FORMASGE.ttf"
+			"font" "resource/FORMASGE.TTF"
 			"name" "FORMASGE"
 		}	
 	}
