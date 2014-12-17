@@ -158,6 +158,10 @@
 		{
 			"image"		"../console/title_team_halloween2012"
 		}
+		if_halloween_2
+		{
+			"image"		"../console/title_team_halloween2013"
+		}
 		if_fullmoon
 		{
 			"image"		"../console/title_fullmoon"
@@ -350,8 +354,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_ShowButtonPanel"
-		"xpos"			"c200"
-		"ypos"			"40"
+		"xpos"			"c268"
+		"ypos"			"28"
 		"zpos"			"1"
 		"wide"			"32"
 		"tall"			"32"
@@ -682,7 +686,7 @@
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"3"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		""
@@ -726,7 +730,7 @@
 			"tall"			"20"
 			"autoResize"	"0"
 			"pinCorner"		"3"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 			"tabPosition"	"0"
 			"labelText"		""
@@ -764,9 +768,9 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"c165"
-		"ypos"			"40"
-		"zpos"			"1"
+		"xpos"			"c228"
+		"ypos"			"28"
+		"zpos"			"10"
 		"wide"			"32"
 		"tall"			"32"
 		"autoResize"	"0"
@@ -861,7 +865,7 @@
 		"fieldName"		"Notifications_Panel"
 		"xpos"			"c0"
 		"ypos"			"102"
-		"zpos"			"1"
+		"zpos"			"10"
 		"wide"			"210"
 		"tall"			"80"
 		"visible"		"0"
@@ -966,17 +970,19 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HTMLContainer"
-		"xpos"			"c"
-		"ypos"			"130"
+		"xpos"			"c0"
+		"ypos"			"92"
+		"zpos"			"1"
 		"wide"			"300"
-		"tall"			"240"
+		"tall"			"300"
 		"autoResize"	"3"
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
 		"tabPosition"	"0"
 		"border"		"MainMenuBGBorder"
-
+		"PaintBackgroundType"	"2"
+		
 		"HTMLLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -990,7 +996,7 @@
 			"tall"			"15"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
+			"visible"		"0"
 			"enabled"		"1"
 		}
 
@@ -999,9 +1005,10 @@
 			"ControlName"	"HTML"
 			"fieldName"		"HTML"
 			"xpos"			"5"
-			"ypos"			"25"
+			"ypos"			"5"
+			"zpos"			"1"
 			"wide"			"290"
-			"tall"			"210"
+			"tall"			"290"
 			"autoResize"	"3"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1071,12 +1078,12 @@
 		}
 	}
 
-	"ReplayBrowserButton"
+	"SteamWorkshopButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"ReplayBrowserButton"
+		"fieldname"		"SteamWorkshopButton"
 		"xpos"			"40"
-		"ypos"			"261"
+		"ypos"			"275"
 		"zpos"			"11"
 		"wide"			"100"
 		"tall"			"14"
@@ -1132,12 +1139,79 @@
 		}
 	}
 
-	"SteamWorkshopButton"
+	"VRModeButton"
 	{
 		"ControlName"	"EditablePanel"
-		"fieldname"		"SteamWorkshopButton"
+		"fieldname"		"VRModeButton"
+		"xpos"			"c-285"
+		"ypos"			"379"
+		"zpos"			"11"
+		"wide"			"270"
+		"tall"			"36"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+
+		"navUp"			"ReplayBrowserButton"
+		"navDown"		"QuitButton"
+		"navRight"		"Notifications_ShowButtonPanel"
+		"navToRelay"	"SubButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"250"
+			"tall"			"26"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+			
+			"image_drawcolor"	"117 107 94 255"
+			"image_armedcolor"	"235 226 202 255"
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"6"
+				"ypos"			"6"
+				"zpos"			"1"
+				"wide"			"14"
+				"tall"			"14"
+				"visible"		"1"
+				"enabled"		"1"
+				"scaleImage"	"1"
+			}		
+		}
+	}
+
+
+	"ReplayBrowserButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldname"		"ReplayBrowserButton"
 		"xpos"			"40"
-		"ypos"			"275"
+		"ypos"			"261"
 		"zpos"			"11"
 		"wide"			"100"
 		"tall"			"14"
@@ -1391,6 +1465,20 @@
 		"fgcolor_override"	"235 227 203 255"
 	}
 	
+	"VRBGPanel"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"VRBGPanel"
+		"xpos"			"c-290"
+		"ypos"			"373"
+		"zpos"			"-1"
+		"wide"			"260"
+		"tall"			"38"
+		"visible"		"1"
+		"PaintBackgroundType"	"2"
+		"border"		"MainMenuBGBorder"
+	}
+
 	"ShowPromoCodesButton"
 	{
 		"ControlName"	"CExImageButton"
@@ -3359,5 +3447,6 @@
 			}				
 		}		
 	}
+
 
 }

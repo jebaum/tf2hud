@@ -433,6 +433,7 @@
 		"fieldName"				"CDamageAccountPanel"
 		"xpos"					"0"
 		"ypos"					"0"
+		"zpos"					"2" // omp -- place over bonus cross.
 		"wide"					"f0"
 		"tall"					"480"
 		"visible" 				"1"
@@ -676,7 +677,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	 "r640"
-		"ypos"	 "10"
+		"ypos"	 "8" // omp -- -2 spacing fix.
 		"wide"	 "630"
 		"tall"	 "470"
 
@@ -764,9 +765,24 @@
 		"TextFont"				"Default"
 		"ItemFont"				"Default"
 		"ItemFontPulsing"		"Default"
-
 	}
 
+	HudSpellMenu
+	{
+		"fieldName" "HudSpellMenu"
+		"visible" "1"
+		"enabled" "1"
+		"wide"	 "640"
+		"tall"	 "480"
+		"zpos" 	"2"
+		"xpos"			"10"
+		"ypos"			"r30"
+		
+		"TextFont"				"Default"
+		"ItemFont"				"Default"
+		"ItemFontPulsing"		"Default"
+	}
+	
 	HudCloseCaption
 	{
 		"fieldName" "HudCloseCaption"
@@ -1174,6 +1190,19 @@
 		"PaintBackgroundType"	"0"
 	}
 
+	"HudEurekaEffectTeleportMenu"
+	{
+		"fieldName" 	"HudEurekaEffectTeleportMenu"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"c-66"
+		"ypos"			"c88"
+		"zpos"			"1"
+		"wide"			"132"
+		"tall"			"108"
+		"PaintBackgroundType"	"0"
+	}
+	
 	"HudMenuSpyDisguise"
 	{
 		"fieldName" 	"HudMenuSpyDisguise"
@@ -1514,6 +1543,34 @@
 		"ypos"			"100"
 		"wide"			"320"
 		"tall"			"150"
+	}
+
+
+	"CTFKillStreakNotice"
+	{
+		"fieldName"		"CTFKillStreakNotice"
+		"xpos"			"0"			
+		"ypos"			"0"
+		"wide"			"640"
+		"tall"			"480"
+		"visible"		"1"
+		"enabled"		"1"
+		"bgcolor_override"	"0 0 0 0"
+		"PaintBackgroundType"	"0" // rounded corners
+	}
+
+	"HudMenuTauntSelection"
+	{
+		"fieldName" 	"HudMenuTauntSelection"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"xpos"			"c-235"
+		"ypos"			"c-52"
+		"ypos_hidef"	"c-42"
+		"ypos_lodef"	"c-42"
+		"wide"			"470"
+		"tall"			"200"
+		"PaintBackgroundType"	"0"
 	}
 
 	"OmpCrosshairPlus"
